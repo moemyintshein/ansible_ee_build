@@ -23,7 +23,6 @@ $ podman load -i /tmp/general-ee.tar		#Load image
 ```
 - To add new OLAM Execution Environments with custom image, login to OLAM
 - Go to Execution Environments and click Add
-  ![image](https://github.com/user-attachments/assets/0581e0a7-e797-4695-9040-5f358dec2709)
   ![image](https://github.com/user-attachments/assets/c8116439-2156-4431-ae30-71eb9f72def7)
 - Add Name*, Image*, Pull* and save (Image name will be loaded image out name from podman load command)
 ![image](https://github.com/user-attachments/assets/b8779669-0e11-45f4-b38d-df3d96954841)
