@@ -1,5 +1,4 @@
-# ansible_ee_build
-# Ansible image build with collection
+# Execution environment image build with ansible collection
 - Create ansible virtual env and install ansible, ansible-builder
 ```
 $ virtualenv ansible_ee
@@ -17,13 +16,12 @@ $ podman run -it localhost/ansible-execution-env /bin/bash 	#To check xml module
 $ podman tag {IMAGE ID} general-ee:latest		#Change name
 $ podman save localhost/general-ee -o general-ee.tar		#Save image
 ```
-- Upload image to OAM server and load image
+- Upload image to OLAM server and load image
 ```
 $ su -l awx -s /bin/bash                    #To change user
 $ podman load -i /tmp/general-ee.tar		#Load image
 ```
-- And add image to OAM Execution Environments
-- Login to OLAM
+- To add new OLAM Execution Environments with custom image, login to OLAM
 - Go to Execution Environments and click Add
   ![image](https://github.com/user-attachments/assets/0581e0a7-e797-4695-9040-5f358dec2709)
   ![image](https://github.com/user-attachments/assets/c8116439-2156-4431-ae30-71eb9f72def7)
